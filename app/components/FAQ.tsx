@@ -22,7 +22,7 @@ const faqData = [
   {
     question: "What should I bring?",
     answer:
-      "Bring your laptop, charger, and any other devices you might need. We'll provide food, drinks, and a place to work.",
+      "Bring your laptop, charger, and any other devices you might need. We&apos;ll provide food, drinks, and a place to work.",
   },
   {
     question: "Is there a fee to participate?",

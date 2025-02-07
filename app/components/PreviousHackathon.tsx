@@ -15,7 +15,7 @@ const winnersData = [
     project: "HealthHub",
     image: "/placeholder.svg",
     testimonial:
-      "The mentorship and resources provided during the hackathon were invaluable. We're thrilled to have won!",
+      "The mentorship and resources provided during the hackathon were invaluable. We&apos;re thrilled to have won!",
   },
   {
     name: "Tech Titans",

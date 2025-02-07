@@ -26,7 +26,7 @@ const About = () => {
             <h3 className="text-2xl font-semibold mb-4 text-retro-pink">What is Colossus 2025?</h3>
             <p className="mb-4 text-retro-green">
               Colossus 2025 is a 24-hour intergalactic coding mission where space cadets, alien designers, and cosmic
-              innovators unite to create mind-bending projects. Whether you're a seasoned astronaut or a rookie
+              innovators unite to create mind-bending projects. Whether you&apos;re a seasoned astronaut or a rookie
               explorer, this is your chance to push the boundaries of the digital universe!
             </p>
           </div>
