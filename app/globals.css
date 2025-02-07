@@ -42,32 +42,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: black;
+  background: theme("colors.retro-black");
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffff00;
+  background: theme("colors.retro-pink");
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0000ff;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.animate-float {
-  animation: float 5s ease-in-out infinite;
+  background: theme("colors.retro-blue");
 }
