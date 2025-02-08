@@ -19,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${vt323.className} bg-black text-retro-green`}>
+      <body
+        className={`${vt323.className} bg-hackathon-darker-blue text-hackathon-light-pink`}
+      >
         <CustomScrollbar />
         <Header />
         <main>{children}</main>

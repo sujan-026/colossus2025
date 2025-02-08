@@ -1,21 +1,21 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const sponsorsData = [
   { name: "TechCorp", logo: "/placeholder.svg" },
   { name: "InnovateLabs", logo: "/placeholder.svg" },
   { name: "FutureTech", logo: "/placeholder.svg" },
   { name: "CodeMasters", logo: "/placeholder.svg" },
-]
+];
 
 const Sponsors = () => {
   return (
-    <section id="sponsors" className="py-20 bg-retro-black">
+    <section id="sponsors" className="py-20 bg-hackathon-dark-blue">
       <div className="container mx-auto px-4">
         <motion.h2
-          className="text-4xl font-bold mb-8 text-center text-retro-pink"
+          className="text-4xl font-bold mb-8 text-center text-hackathon-light-pink"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -27,7 +27,7 @@ const Sponsors = () => {
           {sponsorsData.map((sponsor, index) => (
             <motion.div
               key={index}
-              className="bg-retro-purple p-6 rounded-lg shadow-lg flex items-center justify-center border-2 border-retro-blue"
+              className="bg-hackathon-darker-blue p-6 rounded-lg shadow-lg flex items-center justify-center border-2 border-hackathon-purple"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -46,8 +46,7 @@ const Sponsors = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Sponsors
-
+export default Sponsors;

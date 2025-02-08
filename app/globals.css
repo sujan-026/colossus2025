@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes blink {
-
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
 @keyframes chomp {
   0% {
     clip-path: circle(50% at 50% 50%);
@@ -28,28 +16,24 @@
   }
 }
 
-.animate-blink {
-  animation: blink 1s infinite;
-}
-
 .animate-chomp {
-  animation: chomp 0.5s infinite;
+  animation: chomp 0.3s linear infinite;
 }
 
 /* Custom scrollbar styles */
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 24px;
 }
 
 ::-webkit-scrollbar-track {
-  background: theme("colors.retro-black");
+  background: #1a1a23;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: theme("colors.retro-pink");
-  border-radius: 8px;
+  background: #e9c7e9;
+  border-radius: 12px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: theme("colors.retro-blue");
+  background: #b79bcd;
 }

@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useState } from "react"
+import { motion } from "framer-motion";
+import { useState } from "react";
 
 const faqData = [
   {
@@ -22,22 +22,22 @@ const faqData = [
   {
     question: "What should I bring?",
     answer:
-      "Bring your laptop, charger, and any other devices you might need. We&apos;ll provide food, drinks, and a place to work.",
+      "Bring your laptop, charger, and any other devices you might need. We'll provide food, drinks, and a place to work.",
   },
   {
     question: "Is there a fee to participate?",
     answer: "No, participation in Colossus 2025 is completely free!",
   },
-]
+];
 
 const FAQ = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null)
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-20 bg-retro-black">
+    <section id="faq" className="py-20 bg-hackathon-darker-blue">
       <div className="container mx-auto px-4">
         <motion.h2
-          className="text-4xl font-bold mb-8 text-center text-retro-pink"
+          className="text-4xl font-bold mb-8 text-center text-hackathon-light-pink"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -56,10 +56,14 @@ const FAQ = () => {
               viewport={{ once: true }}
             >
               <button
-                className="w-full text-left p-4 bg-retro-purple rounded-lg focus:outline-none border-2 border-retro-blue"
-                onClick={() => setActiveIndex(activeIndex === index ? null : index)}
+                className="w-full text-left p-4 bg-hackathon-dark-blue rounded-lg focus:outline-none border-2 border-hackathon-purple"
+                onClick={() =>
+                  setActiveIndex(activeIndex === index ? null : index)
+                }
               >
-                <h3 className="text-lg font-semibold text-retro-pink">{item.question}</h3>
+                <h3 className="text-lg font-semibold text-hackathon-light-pink">
+                  {item.question}
+                </h3>
               </button>
               <motion.div
                 initial={{ height: 0, opacity: 0 }}
@@ -68,17 +72,16 @@ const FAQ = () => {
                   opacity: activeIndex === index ? 1 : 0,
                 }}
                 transition={{ duration: 0.3 }}
-                className="overflow-hidden bg-retro-black rounded-b-lg border-2 border-t-0 border-retro-blue"
+                className="overflow-hidden bg-hackathon-darker-blue rounded-b-lg border-2 border-t-0 border-hackathon-purple"
               >
-                <p className="p-4 text-retro-green">{item.answer}</p>
+                <p className="p-4 text-hackathon-beige">{item.answer}</p>
               </motion.div>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FAQ
-
+export default FAQ;

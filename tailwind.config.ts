@@ -11,8 +11,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "hackathon-dark-blue": "#1F1F47",
+        "hackathon-darker-blue": "#1A1A23",
+        "hackathon-light-pink": "#E9C7E9",
+        "hackathon-beige": "#F8E4CB",
+        "hackathon-lavender": "#B79BCD",
+        "hackathon-purple": "#846EB1",
         "hackathon-black": "#000000",
-        "hackathon-purple": "#33006F",
         "retro-black": "#000000",
         "retro-purple": "#3F0071",
         "retro-pink": "#FB2576",
@@ -60,5 +65,5 @@ module.exports = {
       },
     },
   },
-  plugins: [import("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate")],
 };
