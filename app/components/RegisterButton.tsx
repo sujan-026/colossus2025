@@ -22,8 +22,8 @@ const RegisterButton = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Don't miss out on this stellar opportunity to innovate, collaborate,
-          and win astronomical prizes!
+          Don&apos;t miss out on this stellar opportunity to innovate,
+          collaborate, and win astronomical prizes!
         </motion.p>
         <motion.a
           href="https://unstop.com/hackathons/colossus-2025"
