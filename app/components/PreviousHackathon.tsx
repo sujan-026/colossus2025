@@ -1,86 +1,37 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Image from "next/image";
+import { Carousel } from "../components/ui/carousel";
 
-const winnersData = [
-  {
-    name: "Team Innovators",
-    project: "EcoTrack",
-    image: "/placeholder.svg",
-    testimonial:
-      "Colossus 2024 was an incredible experience that pushed our limits and helped us grow as developers.",
-  },
-  {
-    name: "Digital Dreamers",
-    project: "HealthHub",
-    image: "/placeholder.svg",
-    testimonial:
-      "The mentorship and resources provided during the hackathon were invaluable. We're thrilled to have won!",
-  },
-  {
-    name: "Tech Titans",
-    project: "SmartCity",
-    image: "/placeholder.svg",
-    testimonial:
-      "Colossus 2024 opened doors for us. The networking opportunities were amazing, and winning was just the cherry on top.",
-  },
-];
+export default function PreviousHackton() {
+  const slideData = [
+    {
+      title: "Mystic Mountains",
+      button: "Explore Component",
+      src: "https://images.unsplash.com/photo-1494806812796-244fe51b774d?q=80&w=3534&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Urban Dreams",
+      button: "Explore Component",
+      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Neon Nights",
+      button: "Explore Component",
+      src: "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Desert Whispers",
+      button: "Explore Component",
+      src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  ];
 
-const PreviousHackathon = () => {
   return (
-    <section id="previous-hackathon" className="py-20 bg-hackathon-darker-blue">
-      <div className="container mx-auto px-4">
-        <motion.h2
-          className="text-4xl font-bold mb-8 text-center text-hackathon-light-pink"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-        >
-          Colossus 2024 Time Capsule
-        </motion.h2>
-        <motion.p
-          className="text-xl text-center mb-12 text-hackathon-beige"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          Relive the cosmic achievements of our previous intergalactic mission!
-        </motion.p>
-        <div className="grid md:grid-cols-3 gap-8">
-          {winnersData.map((winner, index) => (
-            <motion.div
-              key={index}
-              className="bg-hackathon-dark-blue p-6 rounded-lg shadow-lg border-2 border-hackathon-purple"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <Image
-                src={winner.image || "/placeholder.svg"}
-                alt={winner.name}
-                width={300}
-                height={200}
-                className="rounded-lg mb-4 object-cover border-4 border-hackathon-lavender"
-              />
-              <h3 className="text-2xl font-semibold mb-2 text-hackathon-light-pink">
-                {winner.name}
-              </h3>
-              <p className="text-lg mb-2 text-hackathon-lavender">
-                Project: {winner.project}
-              </p>
-              <p className="italic text-hackathon-beige">
-                &quot;{winner.testimonial}&quot;
-              </p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
+    <div className="relative overflow-hidden w-full h-full py-20">
+      <h2 className="text-4xl font-bold text-center mb-8  border-hackathon-light-pink pb-4 text-hackathon-light-pink">
+          Time Capsule 
+        </h2>
+      <Carousel slides={slideData} />
+    </div>
   );
-};
-
-export default PreviousHackathon;
+}

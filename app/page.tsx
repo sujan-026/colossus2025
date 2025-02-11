@@ -6,14 +6,13 @@ import Sponsors from "./components/Sponsors"
 import PreviousHackathon from "./components/PreviousHackathon"
 import FAQ from "./components/FAQ"
 import RegisterButton from "./components/RegisterButton"
-import Colosseum from "./components/Colosseum"
+// import Colosseum from "./components/Colosseum"
 
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Colosseum />
       <About />
       <Schedule />
       <Speakers />
